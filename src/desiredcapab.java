@@ -17,7 +17,7 @@ public class desiredcapab {
 	public void test() throws MalformedURLException {
 		       File appDir = new File("src");
 		
-		     File app = new File(appDir,"bookMyShow-ucb.apk");
+		     File app = new File(appDir,"Facebook.apk");
 		     
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME,MobilePlatform.ANDROID);
