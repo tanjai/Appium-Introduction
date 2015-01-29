@@ -30,6 +30,7 @@ public class desiredcapab {
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cap );
 		driver.findElementById("com.bt.bms:id/btnLogin").click();
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "1000");
 		driver.findElementById("com.bt.bms:id/btnSignUp").click();
 	int s=driver.findElements(By.className("android.widget.EditText")).size();
 		System.out.println(s);
